@@ -28,14 +28,14 @@ class Database():
                 host="198.74.52.147",
                 database="RoPerks",
                 user="postgres",
-                password="Bestmate69",
+                password="e0Hu7AgF*24o7Hf$H&3o",
             )
         except asyncpg.exceptions.InvalidAuthorizationSpecificationError:
             self.pool = await asyncpg.create_pool(
                 host="localhost",
                 database="RoPerks",
                 user="postgres",
-                password="Bestmate69",
+                password="e0Hu7AgF*24o7Hf$H&3o",
             )
         
         
