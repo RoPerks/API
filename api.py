@@ -47,7 +47,7 @@ def create_app():
     async def startup():
         await db.create_db_pool()
 
-    @app.get("/api/nitro_status/{roblox_id}")
+    @app.get("/nitro_status/{roblox_id}")
     async def nitro_status(request: Request, roblox_id: int, api_key: str):
 
         nitro_status = await db.get_nitro_status(api_key, roblox_id)
