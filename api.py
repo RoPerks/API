@@ -9,7 +9,7 @@ class Database():
     async def create_db_pool(self):
         try:
             self.pool = await asyncpg.create_pool(
-                host="198.74.52.147",
+                host="DEPRECATED",
                 database="RoPerks",
                 user="postgres",
                 password="e0Hu7AgF*24o7Hf$H&3o",
